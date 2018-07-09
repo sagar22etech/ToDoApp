@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/material-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+  <link rel="stylesheet" href="css/list.css">
+</head>
+<body>
+  <div class="list-container-full">
+    <div class="list-container-mobile">
+
+      <div class="header">
+        <a href="#"><span>TODO</span><i class="material-icons" id='logout-btn'> power_settings_new </i></a>
+      </div>
+
+      <div class="list">
+        <ul class="todos">
+        </ul>
+      </div><!-- end list -->
+
+      <div class="footer">
+        <a href="#" data-toggle="modal" data-target="#addTodo"><i class="material-icons">add_circle_outline</i></a>
+      </div><!-- end footer-->
+
+    </div><!-- end list-container-mobile -->
+  </div>
+
+
+    <!-- Modal -->
+    <div class="modal" id="addTodo">
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <h4 class="modal-title w-100 font-weight-bold">Add your Todo here</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <form id="addTodoForm">
+            <div class="modal-body mx-3">
+              <div class="md-form mb-5">
+                <i class="fa fa-envelope prefix grey-text"></i>
+                <input type="text" id="defaultForm-email" class="form-control validate" placeholder="Your work">
+              </div>
+
+              <div class="md-form mb-4">
+                <i class="fa fa-lock prefix grey-text"></i>
+                <input type="text" id="defaultForm-pass" class="form-control validate" placeholder="Description">
+              </div>
+            </div>
+            <div class="msg-box">
+                <span id="success-msg"></span>
+            </div>
+              <div class="modal-footer d-flex justify-content-center">
+              <button id="save_task" type="submit" class="btn btn-default">Save</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+  <script src="./js/jquery-3.3.1.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/list.js"></script>
+</body>
+</html>

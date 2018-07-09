@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/material-icons.css">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div class="page-container">
+      <div class="page-content">
+        <div class="user-form">
+          <div class="header-icon">
+            <i class="material-icons">done</i>
+          </div>
+          <div class="msg">
+              <span id="error-msg"></span>
+          </div>
+          <form id="myForm">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="material-icons">person_outline</i></span>
+              <input id="email" type="email" class="form-control" name="email" placeholder="Username">
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon"><i class="material-icons md-dark"> lock </i></span>
+              <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+            </div>
+            <div class="forgot-link">
+              <a href="#">Forgot Password</a>
+            </div>
+            <div class="submit-btn">
+              <button id="btn" type="submit" name="button">Sign In</button>
+            </div>
+            <div class="signup-link">
+              <span>Don't have an account?</span>&nbsp&nbsp<a href="sign_up.html">Sign Up</a>
+            </div>
+          </form>
+
+        </div><!-- end login-form -->
+      </div><!-- end page-content -->
+    </div><!-- end page-container -->
+
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/login.js"></script>
+  </body>
+</html>

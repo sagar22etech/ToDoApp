@@ -1,0 +1,126 @@
+@font-face {
+    font-family: Avenir;
+    src: url(../fonts/AvenirLTStd-Book.otf);
+    src: url(../fonts/AvenirLTStd-Medium.otf);
+    src: url(../fonts/AvenirLTStd-Roman.otf);
+  }
+  @import '~pretty-checkbox/src/pretty-checkbox.scss';
+body{
+    font-family: 'Avenir';
+}
+.list-container-full {
+    background: #747374;
+      background-repeat: no-repeat;
+      min-height:100vh;
+      overflow: hidden;
+  }
+.list-container-mobile {
+    max-width: 420px;
+    margin: 0 auto;
+    position: relative;
+}
+.header{
+    background-color: #ff3366;
+    padding: 25px 0 15px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 420px;
+}
+.header i{
+    float: left;
+    color: white;
+    margin-top: -4px;
+    margin-left: 15px;
+    font-size: 30px;
+}
+.header a {
+    color: white;
+    font-size: 15px;
+    position: relative;
+    display: block;
+    text-decoration: none;
+}
+.header a #back-btn,
+.header a #logout-btn {
+  position: absolute;
+}
+.header a #back-btn {
+  left: 0;
+}
+.header a #logout-btn {
+  right: 15px;
+}
+.header a span {
+  vertical-align: text-bottom;
+}
+.contents{
+    margin-top: 100px;
+    color: #fff;
+    padding: 0 20px;
+}
+.contents-header h4 {
+  margin-bottom: 0;
+}
+.footer {
+  padding: 15px 0;
+  text-align: center;
+  background-color: #E0E0E0;
+  position: fixed;
+  bottom: 0;
+  width: 420px;
+  display: flex;
+}
+.deletebtn{
+    float: left;
+    width: 150px;
+}
+button {
+  cursor: pointer;
+}
+button:hover{
+    background: #ff3366;
+    color: #D0D0D0 ;
+}
+button:focus {
+  outline: none;
+  box-shadow: none;
+}
+.save_btns , .edit_btns{
+    background: transparent;
+    border-radius:4px;
+    color: #ff3366;
+    border: 2px solid #ff3366;
+    font-size: 15px;
+    padding: 5px 35px;
+}
+.control-group{
+    margin-top: 100px;
+    color: white;
+}
+.edit{
+    display: none;
+}
+.savebtn{
+    float: right;
+    width: 150px;
+}
+.center{
+    margin: 0 auto;
+}
+@media (max-width: 425px) {
+  .header,
+  .footer {
+    width: 100%;
+  }
+  .modal-title {
+    font-size: 15px;
+  }
+  p{
+ font-size: 15px;
+   }
+   h4{
+       font-size:
+   }
+}
